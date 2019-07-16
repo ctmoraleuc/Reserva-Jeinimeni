@@ -50,4 +50,5 @@ d3.json('./parque_patagonia.json')
       onEachFeature: MostrarDato,
       style: areaStyle,
         }).addTo(map)
-  });
+  })
+};

@@ -19,26 +19,3 @@ L.marker(MAP_CENTER).addTo(map)
 // Agregar circulo marcador (CircleMarker) con información emergente (PopUp) de ejemplo
 L.circleMarker(MAP_CIRCLE, { radius: MAP_RADIUS }).addTo(map)
   .bindPopup('Ubicación Reserva Nacional.'),
-
-// Se establece una constante como referencia para mostrar "Información Adicional"
-// const mas_info = document.getElementById("mas_info")
-
-function MostrarDato(feature, layer) {
-  // Se valida si el objeto tiene la propiedad "properties"
-  if (feature.properties) {
-    let dato_a_mostrar = `<p>
-      <h5>Nombre: ${feature.properties.NOMBRE}</h5><br/>
-      <span><b>Superficie</b>: ${feature.properties.Superficie}</span><br/>
-   </p>`}
-
-
-function areaStyle(feature){
-	return {
-  	fillColor: getAreaColor(feature),
-    weight: 2,
-    opacity: 1,
-    color: 'white',
-    dashArray: '3',
-    fillOpacity: 0.5}
- };
-

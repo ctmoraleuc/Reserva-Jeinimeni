@@ -41,14 +41,4 @@ function areaStyle(feature){
     dashArray: '3',
     fillOpacity: 0.5}
  };
-     
-     
-// Se agrega data al Mapa
-d3.json('./parque_patagonia.json')
-  .then((geojson) => {
-    L.geoJSON(geojson, {
-      onEachFeature: MostrarDato,
-      style: areaStyle,
-        }).addTo(map)
-  })
-};
+

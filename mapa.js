@@ -18,4 +18,4 @@ L.marker(MAP_CENTER).addTo(map)
   
 // Agregar circulo marcador (CircleMarker) con información emergente (PopUp) de ejemplo
 L.circleMarker(MAP_CIRCLE, { radius: MAP_RADIUS }).addTo(map)
-  .bindPopup('Ubicación Reserva Nacional.'),
+  .bindPopup('Ubicación Reserva Nacional.')
